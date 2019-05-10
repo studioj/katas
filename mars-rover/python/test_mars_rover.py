@@ -8,5 +8,6 @@ class TestMarsRover(TestCase):
         """this test can be removed"""
         self.assertIn("mars", title)
 
-    def test_mars_rover_moves_north_when_facing_north_and_asked_to_go_forward(self):
+    def test_mars_rover_provides_a_location(self):
         rover = Rover('N', 0, 0)
+        self.assertEqual(rover.location, (0, 0))

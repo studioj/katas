@@ -9,4 +9,4 @@ class Rover(object):
 
     def forward(self):
         self.__y += 1
-        self.location = (0, 1)
+        self.location = (self.__x, self.__y)

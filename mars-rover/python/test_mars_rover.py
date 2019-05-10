@@ -9,4 +9,4 @@ class TestMarsRover(TestCase):
         self.assertIn("mars", title)
 
     def test_mars_rover_moves_north_when_facing_north_and_asked_to_go_forward(self):
-        rover = Rover(0, 0)
+        rover = Rover('N', 0, 0)

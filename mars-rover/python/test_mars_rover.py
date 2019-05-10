@@ -26,3 +26,8 @@ class TestMarsRover(TestCase):
         rover = Rover('E')
         rover.forward()
         self.assertEqual(rover.location, (1, 0))
+
+    def test_rover_moves_west_one_step_if_asked_to_go_forward_and_facing_west(self):
+        rover = Rover('W')
+        rover.forward()
+        self.assertEqual(rover.location, (-1, 0))

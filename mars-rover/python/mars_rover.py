@@ -9,10 +9,9 @@ class Rover(object):
         self.location = (self.__x, self.__y)
 
     def forward(self):
-        if self.direction == "N":
-            self.__y += 1
-        elif self.direction == "S":
-            self.__y -= 1
+        north_south = {"N": 1, "S": -1}
+        if self.direction in north_south.keys():
+            self.__y += north_south[self.direction]
         elif self.direction == "E":
             self.__x += 1
         elif self.direction == "W":

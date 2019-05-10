@@ -1,5 +1,8 @@
 # Mars Rover
-
+Travis build: [![Build Status](https://travis-ci.com/studioj/katas.svg?branch=master)](https://travis-ci.com/studioj/katas)
+Coveralls coverage: [![Coverage Status](https://coveralls.io/repos/github/studioj/katas/badge.svg)](https://coveralls.io/github/studioj/katas)
+Beter Code Hub Score: [![BCH compliance](https://bettercodehub.com/edge/badge/studioj/katas?branch=master)](https://bettercodehub.com/)
+Code Factor Score: [![CodeFactor](https://www.codefactor.io/repository/github/studioj/katas/badge)](https://www.codefactor.io/repository/github/studioj/katas)
 original idea from: http://kata-log.rocks/mars-rover-kata
 
 

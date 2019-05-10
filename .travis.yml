@@ -1,14 +1,12 @@
-jobs:
+matrix:
   include:
-    - stage mar-rover
-      language: python
+    - language: python
       python:
       - "2.7"
       - "3.6"
-    # command to install dependencies
       install:
-        - pip install -r mars-rover\python\requirements.txt
+        - pip install -r mars-rover/python/requirements.txt
       script:
-        - pytest mars-rover\python\test_mars_rover.py --cov=mars-rover/python/
+        - pytest mars-rover/python/test_mars_rover.py --cov=mars-rover/python/
       after_success:
         - coveralls

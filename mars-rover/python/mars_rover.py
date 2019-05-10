@@ -13,4 +13,6 @@ class Rover(object):
             self.__y += 1
         elif self.direction == "S":
             self.__y -= 1
+        elif self.direction == "E":
+            self.__x += 1
         self.location = (self.__x, self.__y)

@@ -11,6 +11,6 @@ class Rover(object):
     def forward(self):
         if self.direction == "N":
             self.__y += 1
-        else:
+        elif self.direction == "S":
             self.__y -= 1
         self.location = (self.__x, self.__y)
